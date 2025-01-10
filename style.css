@@ -1,0 +1,88 @@
+body{
+    margin:0;
+    padding:0; 
+}
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    background: black;
+}
+.box div{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: pink;
+    box-shadow: 0px 0px 5px white;
+}
+.box div:nth-child(1){
+    top:0%;
+    left: 5%;
+    animation: animate 20s linear infinite;
+}
+
+.box div:nth-child(2){
+    top:3%;
+    left: 5%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(3){
+    top:4%;
+    left: 8%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(4){
+    top:7%;
+    left:9%;
+    animation: animate 30s linear infinite;
+}
+
+.box div:nth-child(5){
+    top:9%;
+    left: 5%;
+    animation: animate 35s linear infinite;
+}
+
+.box div:nth-child(6){
+    top:9%;
+    left: 10%;
+    animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(7){
+    top:7%;
+    left: 8%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(8){
+    top:5%;
+    left: 6%;
+    animation: animate 13s linear infinite;
+}
+
+.box div:nth-child(9){
+    top:17%;
+    left: 18%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(10){
+    top:10%;
+    left: 15%;
+    animation: animate 23s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity:1;
+    }
+    100%{
+        transform: scale(1) translateY(-150px) rotate(360deg);
+        opacity:0;
+    }
+}
